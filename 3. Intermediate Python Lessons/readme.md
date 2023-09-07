@@ -1,3 +1,3 @@
-### **Intermediate Python Lessons**
+### Intermediate Python Lessons
 
-Python lessons by Sentdex YouTube Channel. Followed and learned new concepts to get intermedite Python knowledge.
+Python lessons from different online sources and books. Followed and learned new concepts to get intermedite to advanced Python knowledge.
