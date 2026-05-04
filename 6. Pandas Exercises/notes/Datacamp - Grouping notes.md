@@ -28,11 +28,12 @@ summary_df = df.groupby('grouping_column').agg(
 ```
 Group aggregations work through three steps. 
 
-- 1. Split : Divide data into groups
+1. Split : Divide data into groups
 
-- 2. Apply : Apply summary operation in each group
+2. Apply : Apply summary operation in each group
 
-- 3. Combine : Results in each group are combined
+3. Combine : Results in each group are combined
+
 
 ### 2. Uniqueness
 
