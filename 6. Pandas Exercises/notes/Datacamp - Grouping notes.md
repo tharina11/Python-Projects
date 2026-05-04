@@ -1,6 +1,9 @@
-## Pandas most common patterns
+## **Pandas most common patterns**
 
 Design questions (think through before you code) - By which column do we aggregate? -> Which column to summarize? -> Which operation to apply?
+
+## Single-Column Grouping
+
 
 ### 1. Aggregation
 
@@ -54,8 +57,28 @@ df['column_name'].value_counts(normalize=True)
 summary_df = summary_df.sort_values(by='total_amount', ascending=False)
 ```
 
+## Multi-Column Grouping
 
+### 1. Grouping with multiple columns
 
+```python
+summary_df = (
+    df
+    .groupby(['grouping_col1', 'grouping_col2'])
+    .agg(
+        metric_1=('column_1', 'count'),
+        metric_2=('column_2', 'nunique'),
+        metric_3=('column_3', 'sum'),
+        metric_4=('column_3', 'mean'))
+    .reset_index()
+
+    summary_df = summary_df.sort_values(
+    by=['grouping_col1', 'metric_1'],
+    ascending=[True, False]
+)
+```
+
+*Groups with no data do not appear in the summary table*
 
 
 
