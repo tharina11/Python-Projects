@@ -1,4 +1,4 @@
-## **Pandas most common patterns**
+## **Pandas most common patterns - Filtering**
 
 Design questions (think through before you code) - By which column do we aggregate? -> Which column to summarize? -> Which operation to apply?
 
@@ -54,3 +54,11 @@ df.loc[df['col_1'].isna()]
 ```python
 df.loc[df['col_1'].notna()]
 ```
+
+### 4. Filtering with multiple conditions
+
+Ask the two questions below before you write the code.
+
+1. What filtering conditions do we need to apply?
+
+2. How do we combine the filtered results.

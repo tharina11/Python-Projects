@@ -1,4 +1,4 @@
-## **Pandas most common patterns**
+## **Pandas most common patterns - Grouping**
 
 Design questions (think through before you code) - By which column do we aggregate? -> Which column to summarize? -> Which operation to apply?
 

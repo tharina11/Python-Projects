@@ -1,4 +1,4 @@
-## **Pandas Transformations**
+## **Pandas most common patterns - Transformations**
 
 Design questions (think through before you code) - What are the input columns? -> Which formula we need to apply?
 
